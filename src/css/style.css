@@ -1,8 +1,10 @@
 h1 {
   color: red;
+  text-align: center;
 }
 
-p {
-  color: green;
-  text: 24px;
+div {
+  width: 400px;
+  height: 400px;
+  background-color: grey;
 }/*# sourceMappingURL=style.css.map */
