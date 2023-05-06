@@ -1,10 +1,20 @@
+$main-color: #F28B64
+
+@mixin box
+    width: 400px
+    height: 400px
+    background-color: grey
+        
+    
 h1 
     color: red
     text-align: center    
 
-div
-    width: 400px
-    height: 400px
-    background-color: grey
-    p
-    
+.block
+    @include box
+    &__text
+        color: $main-color
+
+.block-2
+    @include box
+    margin-top: 20px
