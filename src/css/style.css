@@ -1,20 +1,2 @@
-h1 {
-  color: red;
-  text-align: center;
-}
-
-.block {
-  width: 400px;
-  height: 400px;
-  background-color: grey;
-}
-.block__text {
-  color: #F28B64;
-}
-
-.block-2 {
-  width: 400px;
-  height: 400px;
-  background-color: grey;
-  margin-top: 20px;
-}/*# sourceMappingURL=style.css.map */
+@import 'normalize.css';
+@import 'reset.css';/*# sourceMappingURL=style.css.map */
