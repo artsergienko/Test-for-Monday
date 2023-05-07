@@ -2,15 +2,18 @@
 @import 'reset.css'
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap')
 
+$main-color: #3E9CDC
 
 body
     font-family: 'Ubuntu', sans-serif
 
 .container
     margin: 0 auto
+
 .main-section
-    height: 850px
     background-image: url('/src/img/background.png')
+    object-fit: scale-down
+    padding-bottom: 202px
     &__location
         width: 1168px
         display: flex
@@ -30,6 +33,53 @@ body
         color: white
         font-size: 28px
         font-weight: 800
+    &__content
+        width: 1168px
+        margin: 0 auto
+        margin-top: 102px
+    &__paragraph
+        font-size: 20px
+        font-weight: bold
+        padding-bottom: 12px
+    &__description
+        font-size: 20px
+        font-weight: 300
+        padding-bottom: 6px
+    &__btn-position
+        padding-top: 80px
+        display: flex
+        flex-direction: row
+    &__btn-main
+        background-color: $main-color
+        cursor: pointer
+        width: 183px
+        height: 43px
+        margin-right: 30px
+        font-size: 13px
+        color: #FFFFFF
+        border: 1px solid #FFFFFF
+        border-radius: 4px
+        &:hover
+            transition: 0.4s ease-in
+            background-color: #FFFFFF
+            border: 1px solid #6F6D7B
+            color: #2A2B30
+        &:last-child
+            background-color: #FFFFFF
+            border: 1px solid #6F6D7B
+            color: #2A2B30
+            &:hover
+                background-color: $main-color
+                color: #FFFFFF
+                border: 1px solid #FFFFFF
+
+    
+h1
+    font-size: 48px
+    font-weight: 500
+    width: 780px
+    color: $main-color
+    padding-bottom: 80px
         
 .nav-menu
     &__list
