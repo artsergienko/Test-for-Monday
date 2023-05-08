@@ -118,7 +118,7 @@ h2 {
 }
 
 .checkout-section {
-  background-image: url("/src/img/bg_two.png");
+  background-image: url("./../img/bg_two.png");
 }
 .checkout-section__position {
   max-width: 1168px;
