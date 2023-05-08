@@ -34,7 +34,7 @@ body
         font-size: 28px
         font-weight: 800
     &__content
-        width: 1168px
+        max-width: 1168px
         margin: 0 auto
         margin-top: 102px
     &__paragraph
@@ -93,8 +93,6 @@ h1
         &:last-child
             margin-right: 0px
 
-
-
 h2
     text-align: center
     font-size: 40px
@@ -106,7 +104,7 @@ h2
 .checkout-section
     background-image: url('/src/img/bg_two.png')
     &__position
-        width: 1168px
+        max-width: 1168px
         margin: 0 auto
         padding-bottom: 130px
     &__item
@@ -175,7 +173,7 @@ h2
         display: flex
         flex-direction: row
         justify-content: space-between
-        width: 1168px
+        max-width: 1168px
         margin: 0 auto
     &__li-position
         display: flex
@@ -301,6 +299,166 @@ h2
     background: #4CAF50
     cursor: pointer
 
+@media (max-width: 1440px)
+    .container
+        min-width: 1024px
 
+    .main-section
+        padding-bottom: 202px
+        &__location
+            width: 920px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            margin: 0 auto
+        &__content
+            max-width: 920px
+            margin: 0 auto
+            margin-top: 102px
+        
+
+@media (max-width: 1144px)
+    .container
+        min-width: 768px
+
+    .main-section
+        padding-bottom: 202px
+        &__location
+            width: 720px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            margin: 0 auto
+        &__content
+            max-width: 720px
+            margin: 0 auto
+            margin-top: 102px
+
+    .checkout-section
+        background-image: url('/src/img/bg_two.png')
+        &__position
+            max-width: 720px
+            margin: 0 auto
+            padding-bottom: 130px
+        &__btn-slider
+            width: 220px
+            border-radius: 3px
+            height: 48px
+            font-size: 15px
+            background: #FFFFFF
+            border: 2px solid #3E9CDC
+            cursor: pointer
+            display: flex
+            flex-direction: row
+            justify-content: center
+            padding-top: 12px
+
+    .select 
+        width: 220px
+        border-radius: 3px
+        border: solid rgba(61, 64, 80,)
+        overflow: hidden
+        color: #ffffff
+        font-weight: 200px
+        margin: 0
+        position: relative
+        max-height: calc(48px * 8) /* max 8 element in list */
+        transition: 0.2s
+
+    .select:before 
+        content: ''
+        position: absolute
+        background-color: #ffffff
+        width: 14px
+        height: 14px
+        -webkit-transform: rotate(45deg)
+        top: 15px
+        right: 15px
+
+    .select:after 
+        content: ''
+        position: absolute
+        background: rgba(61, 64, 80,)
+        width: 14px
+        height: 14px
+        -webkit-transform: rotate(45deg)
+        top: 20px
+        right: 15px
+
+    .collapsed 
+        max-height: 48px
+        transition: 0.2s
+
+    .collapsed:before 
+        content: ''
+        position: absolute
+        background-color: #ffffff
+        width: 14px
+        height: 14px
+        -webkit-transform: rotate(45deg)
+        top: 10px
+        right: 15px
+
+    .collapsed:after 
+        content: ''
+        position: absolute
+        background: rgba(61, 64, 80,)
+        width: 14px
+        height: 14px
+        -webkit-transform: rotate(45deg)
+        top: 5px
+        right: 15px
+
+    .option, .shown 
+        width: 220px
+        height: 48px
+        line-height: 40px
+        padding-left: 15px
+        cursor: pointer
+        background: rgba(39, 39, 51, 0.9)
+
+    .shown 
+        background: rgba(61, 64, 80,)
+        font-weight: 400
+
+    h1
+        font-size: 48px
+        font-weight: 500
+        width: 520px
+        color: $main-color
+        padding-bottom: 80px
+
+    .slider 
+        -webkit-appearance: none
+        width: 480px
+        height: 6px
+        border-radius: 5px
+        background: rgba(255, 255, 255, 0.7)
+        border: 1px solid #FFFFFF
+        outline: none
+        opacity: 0.7
+        -webkit-transition: .2s
+        transition: opacity .2s
+
+    footer
+        width: 720px
+        margin: 0 auto
+    .footer-section
+        &__li-position
+            display: flex
+            flex-direction: row
+            font-size: 9px
+            color: #C3C3C3
+            padding-top: 30px
+            padding-bottom: 30px
+            text-decoration: none
+        &__item-position
+            padding-top: 5px
+            margin-left: 6px
+
+@media (max-width: 767px)
+    .container
+        min-width: 320px
+    
     
     

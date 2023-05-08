@@ -39,7 +39,7 @@ body {
   font-weight: 800;
 }
 .main-section__content {
-  width: 1168px;
+  max-width: 1168px;
   margin: 0 auto;
   margin-top: 102px;
 }
@@ -121,7 +121,7 @@ h2 {
   background-image: url("/src/img/bg_two.png");
 }
 .checkout-section__position {
-  width: 1168px;
+  max-width: 1168px;
   margin: 0 auto;
   padding-bottom: 130px;
 }
@@ -202,7 +202,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1168px;
+  max-width: 1168px;
   margin: 0 auto;
 }
 .footer-section__li-position {
@@ -336,4 +336,174 @@ h2 {
   border-radius: 50%;
   background: #4CAF50;
   cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    min-width: 1024px;
+  }
+  .main-section {
+    padding-bottom: 202px;
+  }
+  .main-section__location {
+    width: 920px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .main-section__content {
+    max-width: 920px;
+    margin: 0 auto;
+    margin-top: 102px;
+  }
+}
+@media (max-width: 1144px) {
+  .container {
+    min-width: 768px;
+  }
+  .main-section {
+    padding-bottom: 202px;
+  }
+  .main-section__location {
+    width: 720px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .main-section__content {
+    max-width: 720px;
+    margin: 0 auto;
+    margin-top: 102px;
+  }
+  .checkout-section {
+    background-image: url("/src/img/bg_two.png");
+  }
+  .checkout-section__position {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-bottom: 130px;
+  }
+  .checkout-section__btn-slider {
+    width: 220px;
+    border-radius: 3px;
+    height: 48px;
+    font-size: 15px;
+    background: #FFFFFF;
+    border: 2px solid #3E9CDC;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 12px;
+  }
+  .select {
+    width: 220px;
+    border-radius: 3px;
+    border: solid rgb(61, 64, 80);
+    overflow: hidden;
+    color: #ffffff;
+    font-weight: 200px;
+    margin: 0;
+    position: relative;
+    max-height: 384px;
+    transition: 0.2s;
+  }
+  .select:before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 14px;
+    height: 14px;
+    -webkit-transform: rotate(45deg);
+    top: 15px;
+    right: 15px;
+  }
+  .select:after {
+    content: "";
+    position: absolute;
+    background: rgb(61, 64, 80);
+    width: 14px;
+    height: 14px;
+    -webkit-transform: rotate(45deg);
+    top: 20px;
+    right: 15px;
+  }
+  .collapsed {
+    max-height: 48px;
+    transition: 0.2s;
+  }
+  .collapsed:before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 14px;
+    height: 14px;
+    -webkit-transform: rotate(45deg);
+    top: 10px;
+    right: 15px;
+  }
+  .collapsed:after {
+    content: "";
+    position: absolute;
+    background: rgb(61, 64, 80);
+    width: 14px;
+    height: 14px;
+    -webkit-transform: rotate(45deg);
+    top: 5px;
+    right: 15px;
+  }
+  .option, .shown {
+    width: 220px;
+    height: 48px;
+    line-height: 40px;
+    padding-left: 15px;
+    cursor: pointer;
+    background: rgba(39, 39, 51, 0.9);
+  }
+  .shown {
+    background: rgb(61, 64, 80);
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 500;
+    width: 520px;
+    color: #3E9CDC;
+    padding-bottom: 80px;
+  }
+  .slider {
+    -webkit-appearance: none;
+    width: 480px;
+    height: 6px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #FFFFFF;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  footer {
+    width: 720px;
+    margin: 0 auto;
+  }
+  .footer-section__li-position {
+    display: flex;
+    flex-direction: row;
+    font-size: 9px;
+    color: #C3C3C3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+  }
+  .footer-section__item-position {
+    padding-top: 5px;
+    margin-left: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    min-width: 320px;
+  }
 }/*# sourceMappingURL=style.css.map */
