@@ -40,10 +40,12 @@
                     <li class="main-section__description">- Sed ut perspiciatis, unde omnis iste natus error</li>
                 </ul>
             <!-- Основная кнопка -->
+            <div class="main-section__btn-position-mobile">
                 <div class="main-section__btn-position">
                     <button class="main-section__btn-main">ЗАКАЗАТЬ</button>
                     <button class="main-section__btn-main">ПОДРОБНЕЕ</button>
                 </div>
+            </div>
             </div>
         </div>
         <!-- Секция с оформлением заказа -->
@@ -85,7 +87,6 @@
                     </div>
                 </div>
         <!-- Выпадающий список -->
-        
                 <div id="container-dropdown">
                     <div class="select collapsed" >
                         <div class="shown">Выбрать режим</div>
@@ -103,17 +104,19 @@
                 </div>
         <!-- Ползунок -->
                 <div class="checkout-section__slider">
-                    <div class="slidecontainer">
-                        <div class="checkout-section__slider-item">
-                            <p>Sed ut perspiciatis, unde omnis iste natus</p>
-                            <p><span id="demo"></span>%</p>
+                    
+                        <div class="slidecontainer">
+                            <div class="checkout-section__slider-item">
+                                <p>Sed ut perspiciatis, unde omnis iste natus</p>
+                                <p><span id="demo"></span>%</p>
+                            </div>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                         </div>
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                    </div>
-                    <button class="checkout-section__btn-slider">
-                        <img class="checkout-section__btn-img" src="./img/cards/file.svg">
-                            <span>ПРИКРЕПИТЬ ФАЙЛ</span>
-                    </button>
+                        <button class="checkout-section__btn-slider">
+                            <img class="checkout-section__btn-img" src="./img/cards/file.svg">
+                                <span>ПРИКРЕПИТЬ ФАЙЛ</span>
+                        </button>
+                    
                 </div>
                 <div class="checkout-section__btn-position">
                     <button class="checkout-section__btn">

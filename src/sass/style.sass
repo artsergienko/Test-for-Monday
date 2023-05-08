@@ -440,9 +440,6 @@ h2
         -webkit-transition: .2s
         transition: opacity .2s
 
-    footer
-        width: 720px
-        margin: 0 auto
     .footer-section
         &__li-position
             display: flex
@@ -456,9 +453,182 @@ h2
             padding-top: 5px
             margin-left: 6px
 
-@media (max-width: 767px)
+@media (max-width: 768px)
     .container
         min-width: 320px
+
+    .main-section
+        padding-bottom: 62px
+        &__nav-container
+            display: none
+        &__content
+            width: 280px
+            margin-top: 0px
+        &__btn-position
+            display: flex
+            flex-direction: column
+        &__btn-position-mobile
+            display: flex
+            flex-direction: row
+            justify-content: center
+        &__btn-main
+            margin-right: 0
+            margin-bottom: 24px
+        &__paragraph
+            margin-bottom: 24px
+
+    .checkout-section
+        background-image: url('/src/img/bg_two.png')
+        &__position
+            max-width: 280px
+            margin: 0 auto
+            padding-bottom: 70px
+        &__btn-slider
+            width: 280px
+            border-radius: 3px
+            height: 48px
+            font-size: 15px
+            background: #FFFFFF
+            border: 2px solid #3E9CDC
+            cursor: pointer
+            display: flex
+            flex-direction: row
+            justify-content: center
+            padding-top: 12px
+            margin-top: 20px
+        &__btn
+            width: 280px
+        &__card-position
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding-bottom: 80px
+        &__item-two
+            text-align: center
+            font-size: 16px
+            font-weight: 300
+            color: #FFFFFF
+            padding-bottom: 32px
+        &__slider
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding-bottom: 30px
+            width: 280px
+        
+    #container-dropdown
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding-bottom: 60px 
+        height: 240px
+        
+    .select 
+        width: 220px
+        border-radius: 3px
+        border: solid rgba(61, 64, 80,)
+        overflow: hidden
+        color: #ffffff
+        font-weight: 200px
+        margin: 0
+        position: relative
+        max-height: calc(48px * 8) /* max 8 element in list */
+        transition: 0.2s
+
+    .select:before 
+        content: ''
+        position: absolute
+        background-color: #ffffff
+        width: 14px
+        height: 14px
+        -webkit-transform: rotate(45deg)
+        top: 15px
+        right: 15px
+
+    .select:after 
+        content: ''
+        position: absolute
+        background: rgba(61, 64, 80,)
+        width: 14px
+        height: 14px
+        -webkit-transform: rotate(45deg)
+        top: 20px
+        right: 15px
+
+    .collapsed 
+        max-height: 48px
+        transition: 0.2s
+
+    .collapsed:before 
+        content: ''
+        position: absolute
+        background-color: #ffffff
+        width: 14px
+        height: 14px
+        -webkit-transform: rotate(45deg)
+        top: 10px
+        right: 15px
+
+    .collapsed:after 
+        content: ''
+        position: absolute
+        background: rgba(61, 64, 80,)
+        width: 14px
+        height: 14px
+        -webkit-transform: rotate(45deg)
+        top: 5px
+        right: 15px
+
+    .option, .shown 
+        width: 220px
+        height: 48px
+        line-height: 40px
+        padding-left: 15px
+        cursor: pointer
+        background: rgba(39, 39, 51, 0.9)
+
+    .shown 
+        background: rgba(61, 64, 80,)
+        font-weight: 400
+
+    h1
+        padding-top: 42px
+        font-size: 28px
+        font-weight: 500
+        width: 300px
+        color: $main-color
+        padding-bottom: 80px
+
+    .slider 
+        -webkit-appearance: none
+        width: 280px
+        height: 6px
+        border-radius: 5px
+        background: rgba(255, 255, 255, 0.7)
+        border: 1px solid #FFFFFF
+        outline: none
+        opacity: 0.7
+        -webkit-transition: .2s
+        transition: opacity .2s
+        
+    .footer-section
+        &__position
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            max-width: 312px
+            margin: 0 auto
+        &__li-position
+            display: flex
+            flex-direction: row
+            font-size: 9px
+            color: #C3C3C3
+            padding-top: 30px
+            padding-bottom: 30px
+            text-decoration: none
+        &__item-position
+            padding-top: 5px
+            margin-left: 6px
     
     
     
