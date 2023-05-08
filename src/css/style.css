@@ -10,7 +10,7 @@ body {
 }
 
 .main-section {
-  background-image: url("/src/img/background.png");
+  background-image: url("./../img/background.png");
   -o-object-fit: scale-down;
      object-fit: scale-down;
   padding-bottom: 202px;
