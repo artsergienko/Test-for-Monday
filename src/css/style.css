@@ -195,6 +195,30 @@ h2 {
   justify-content: center;
 }
 
+.footer-section {
+  background: #3D4050;
+}
+.footer-section__position {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1168px;
+  margin: 0 auto;
+}
+.footer-section__li-position {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  color: #C3C3C3;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-decoration: none;
+}
+.footer-section__item-position {
+  padding-top: 2px;
+  margin-left: 10px;
+}
+
 .select {
   width: 370px;
   border-radius: 3px;
