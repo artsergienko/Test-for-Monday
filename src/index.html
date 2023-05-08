@@ -8,24 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <h1>
-        Hello wWorld!
-    </h1>
-    <div class="slidecontainer">
-        <p class="item"><span id="demo"></span>%</p>
-          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-      
-    </div>
-    
-    <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("demo");
-    output.innerHTML = slider.value;
-    
-    slider.oninput = function() {
-      output.innerHTML = this.value;
-    }
-    </script> -->
     <div class="main-section">
         <div class="container main-section__nav-container">
         <!-- Навигационная панель -->
@@ -103,19 +85,39 @@
             </div>
     <!-- Выпадающий список -->
     
-    <div class="select-wrap">
-        <label class="select">
-            <option value="One">One</option>
-			<option value="Three">Tree</option>
-            <option value="Four">Four</option>
-            <option value="Five">Five</option>
-        </label>
-    </div>
-
+            <div id="container-dropdown">
+                <div class="select collapsed" >
+                    <div class="shown">Выбрать режим</div>
+                    <div class="option">Каждый сам за себя</div>
+                    <div class="option">Каждый сам за себя</div>
+                </div>
+                <div class="select collapsed" >
+                    <div class="shown">Выбрать карту</div>
+                    <div class="option">TestMap1</div>
+                </div>
+                <div class="select collapsed" >
+                    <div class="shown">Один элемент</div>
+                    <div class="option">Что-то</div>
+                </div>
+            </div>
     <!-- Ползунок -->
-            <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                <p>Value: <span id="demo"></span></p>
+            <div class="checkout-section__slider">
+                <div class="slidecontainer">
+                    <div class="checkout-section__slider-item">
+                        <p>Sed ut perspiciatis, unde omnis iste natus</p>
+                        <p><span id="demo"></span>%</p>
+                    </div>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+                <button class="checkout-section__btn-slider">
+                    <img class="checkout-section__btn-img" src="./img/cards/file.svg">
+                        <span>ПРИКРЕПИТЬ ФАЙЛ</span>
+                </button>
+            </div>
+            <div class="checkout-section__btn-position">
+                <button class="checkout-section__btn">
+                    ОТПРАВИТЬ
+                </button>
             </div>
         </div>
     </div>
