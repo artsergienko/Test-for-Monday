@@ -360,6 +360,7 @@ h2 {
 }
 @media (max-width: 1144px) {
   .container {
+    background-image: url("./../img/background.png");
     min-width: 768px;
   }
   .main-section {
@@ -503,6 +504,7 @@ h2 {
     min-width: 320px;
   }
   .main-section {
+    background-image: url("./../img/background.png");
     padding-bottom: 62px;
   }
   .main-section__nav-container {
