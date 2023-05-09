@@ -9,6 +9,8 @@ body
 
 .container
     margin: 0 auto
+.nav-hidden
+        display: none
 
 .nav-main
     position: fixed
@@ -300,6 +302,9 @@ h2
     .container
         min-width: 1024px
 
+    .nav-hidden
+        display: none
+
     .nav-main
         &__nav-container
             width: 100%
@@ -323,6 +328,9 @@ h2
 @media (max-width: 1144px)
     .container
         min-width: 768px
+
+    .nav-hidden
+        display: none
 
     .nav-main
         width: 100%
@@ -462,16 +470,24 @@ h2
 @media (max-width: 767px)
     .container
         min-width: 320px
-        
+    
+    .nav-hidden
+        display: block
+
     .nav-main
         display: none
+        &__logo-mobile
+            text-decoration: none
+            color: grey
+            font-size: 18px
+            font-weight: 800
 
     .main-section
         background-image: url('./../img/background.png')
         padding-bottom: 62px
         &__content
             width: 280px
-            margin-top: 0px
+            padding-top: 30px
         &__btn-position
             display: flex
             flex-direction: column
@@ -640,5 +656,46 @@ h2
             margin-left: 6px
         
     
+// nav mobile
     
+
+.menuItem 
+  display: block
+  margin: 2rem 4rem
+  font-size: 1.8rem
+  color: white
+  text-decoration: none
+
+.menuItem:hover 
+    text-decoration: underline
+
+.hamburger 
+  position: fixed
+  z-index: 100
+  top: 1rem
+  right: 1rem
+  padding: 4px
+  background: white
+  cursor: pointer
+
+.closeIcon 
+  display: none
+
+.menu 
+  position: fixed
+  transform: translateY(-100%)
+  transition: transform 0.2s
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 99
+  background: black
+  color: white
+  list-style: none
+  padding-top: 4rem
+
+.showMenu 
+  transform: translateY(0)
+
     

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -27,9 +28,26 @@
                 </header>
             </div>
         </div>
+        <!-- Мобильное меню -->
+        <div class="nav-hidden">            
+                <ul class="menu">
+                    <li><a class="menuItem" href="#">БИЗНЕС</a></li>
+                    <li><a class="menuItem" href="#">О НАС</a></li>
+                    <li><a class="menuItem" href="#">ЦЕНЫ</a></li>
+                    <li><a class="menuItem" href="#">ОФОРМИТЬ ЗАКАЗ</a></li>
+                </ul>
+                <button class="hamburger">
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                </button>
+            </div>
+        </div>
     <!-- Основной контент -->
         <div class="main-section">
             <div class="main-section__content">
+                <div class="nav-hidden">
+                    <a class="nav-main__logo-mobile" href="/">LOREMIPSUM.<span style="color:#3E9CDC;">NET</span></a>
+                </div>
                 <h1>
                     Lorem ipsum <span style="color: black">dolor sit amet consectetur</span> adipiscing
                 </h1>
@@ -91,17 +109,17 @@
         <!-- Выпадающий список -->
                 <div id="container-dropdown">
                     <div class="select collapsed" >
-                        <div class="shown">Выбрать режим</div>
-                        <div class="option">Каждый сам за себя</div>
-                        <div class="option">Каждый сам за себя</div>
+                        <div class="shown">Выберите тип системы</div>
+                        <div class="option">Sed ut perspiciatis</div>
+                        <div class="option">Nemo enim ipsam</div>
+                        <div class="option">Et harum quidem</div>
+                        <div class="option">Temporibus autem</div>
                     </div>
                     <div class="select collapsed" >
-                        <div class="shown">Выбрать карту</div>
-                        <div class="option">TestMap1</div>
+                        <div class="shown">Ваш e-mail</div>
                     </div>
                     <div class="select collapsed" >
-                        <div class="shown">Один элемент</div>
-                        <div class="option">Что-то</div>
+                        <div class="shown">Ваше имя</div>
                     </div>
                 </div>
         <!-- Ползунок -->
