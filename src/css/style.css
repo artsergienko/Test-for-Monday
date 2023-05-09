@@ -360,10 +360,10 @@ h2 {
 }
 @media (max-width: 1144px) {
   .container {
-    background-image: url("./../img/background.png");
     min-width: 768px;
   }
   .main-section {
+    background-image: url("./../img/background.png");
     padding-bottom: 202px;
   }
   .main-section__location {
@@ -379,7 +379,7 @@ h2 {
     margin-top: 102px;
   }
   .checkout-section {
-    background-image: url("/src/img/bg_two.png");
+    background-image: url("./../img/bg_two.png");
   }
   .checkout-section__position {
     max-width: 720px;
@@ -531,7 +531,7 @@ h2 {
     margin-bottom: 24px;
   }
   .checkout-section {
-    background-image: url("/src/img/bg_two.png");
+    background-image: url("./../img/bg_two.png");
   }
   .checkout-section__position {
     max-width: 280px;
