@@ -10,20 +10,9 @@ body
 .container
     margin: 0 auto
 
-.main-section
-    background-image: url('./../img/background.png')
-    object-fit: scale-down
-    padding-bottom: 202px
-    &__location
-        width: 1168px
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        margin: 0 auto
-    &__header
-        display: flex
-        flex-direction: row
-        justify-content: space-between
+.nav-main
+    position: fixed
+    width: 100%
     &__nav-container
         background-color: rgba(16, 16, 29, 0.9)
         padding-top: 32px
@@ -33,10 +22,30 @@ body
         color: white
         font-size: 28px
         font-weight: 800
+    &__location
+        width: 1168px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin: 0 auto
+    &__list
+        padding-top: 6px
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 60px
+        color: white
+        font-size: 13px
+        &:last-child
+            margin-right: 0px
+
+.main-section
+    background-image: url('./../img/background.png')
+    object-fit: scale-down
+    padding-bottom: 202px
     &__content
         max-width: 1168px
         margin: 0 auto
-        margin-top: 102px
     &__paragraph
         font-size: 20px
         font-weight: bold
@@ -72,27 +81,15 @@ body
                 background-color: $main-color
                 color: #FFFFFF
                 border: 1px solid #FFFFFF
-
-    
+  
 h1
     font-size: 48px
     font-weight: 500
     width: 780px
     color: $main-color
     padding-bottom: 80px
+    padding-top: 140px
         
-.nav-menu
-    &__list
-        padding-top: 6px
-        display: flex
-        flex-direction: row
-    &__list-item
-        margin-right: 60px
-        color: white
-        font-size: 13px
-        &:last-child
-            margin-right: 0px
-
 h2
     text-align: center
     font-size: 40px
@@ -303,37 +300,45 @@ h2
     .container
         min-width: 1024px
 
+    .nav-main
+        &__nav-container
+            width: 100%
+            &__location
+                width: 920px
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                margin: 0 auto
+
     .main-section
         padding-bottom: 202px
-        &__location
-            width: 920px
-            display: flex
-            flex-direction: row
-            justify-content: space-between
-            margin: 0 auto
         &__content
             max-width: 920px
             margin: 0 auto
-            margin-top: 102px
+        
+    h1
+        padding-top: 100px
         
 
 @media (max-width: 1144px)
     .container
         min-width: 768px
 
-    .main-section
-        background-image: url('./../img/background.png')
-        padding-bottom: 202px
+    .nav-main
+        width: 100%
         &__location
             width: 720px
             display: flex
             flex-direction: row
             justify-content: space-between
             margin: 0 auto
+
+    .main-section
+        background-image: url('./../img/background.png')
+        padding-bottom: 202px
         &__content
             max-width: 720px
             margin: 0 auto
-            margin-top: 102px
 
     .checkout-section
         background-image: url('./../img/bg_two.png')
@@ -454,15 +459,16 @@ h2
             padding-top: 5px
             margin-left: 6px
 
-@media (max-width: 768px)
+@media (max-width: 767px)
     .container
         min-width: 320px
+        
+    .nav-main
+        display: none
 
     .main-section
         background-image: url('./../img/background.png')
         padding-bottom: 62px
-        &__nav-container
-            display: none
         &__content
             width: 280px
             margin-top: 0px
