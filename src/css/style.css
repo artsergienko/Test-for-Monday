@@ -608,7 +608,7 @@ h2 {
     height: 240px;
   }
   .select {
-    width: 220px;
+    width: 280px;
     border-radius: 3px;
     border: solid rgb(61, 64, 80);
     overflow: hidden;
@@ -664,7 +664,7 @@ h2 {
     right: 15px;
   }
   .option, .shown {
-    width: 220px;
+    width: 280px;
     height: 48px;
     line-height: 40px;
     padding-left: 15px;
